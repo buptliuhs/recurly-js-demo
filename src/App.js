@@ -51,29 +51,29 @@ function CardForm(props) {
                                 <label htmlFor="fname"><i className="fa fa-user"></i> Last Name</label>
                                 <input data-recurly="last_name" type="text" id="fname" name="lastname"
                                        placeholder="Last Name" defaultValue="Smith"/>
-                                <label htmlFor="fname"><i className="fa fa-address-card-o"></i> Address 1</label>
+                                <label htmlFor="fname"><i className="fa fa-address-card"></i> Address 1</label>
                                 <input data-recurly="address1" type="text" id="fname" name="address1"
                                        placeholder="Address 1" defaultValue="123 The Street"/>
                                 <div className="row">
                                     <div className="col-50">
-                                        <label htmlFor="city"><i className="fa fa-address-card-o"></i> City</label>
+                                        <label htmlFor="city"><i className="fa fa-city"></i> City</label>
                                         <input data-recurly="city" type="text" id="city" name="city"
                                                placeholder="City" defaultValue="New York"/>
                                     </div>
                                     <div className="col-50">
-                                        <label htmlFor="state"><i className="fa fa-address-card-o"></i> State</label>
+                                        <label htmlFor="state"><i className="fa fa-route-interstate"></i> State</label>
                                         <input data-recurly="state" type="text" id="state" name="state"
                                                placeholder="State" defaultValue="NY"/>
                                     </div>
                                 </div>
                                 <div className="row">
                                     <div className="col-50">
-                                        <label htmlFor="zip"><i className="fa fa-address-card-o"></i> Zip</label>
+                                        <label htmlFor="zip"><i className="fa fa-map-pin"></i> Zip</label>
                                         <input data-recurly="postal_code" type="text" id="zip" name="zip"
                                                placeholder="Zip" defaultValue="94117"/>
                                     </div>
                                     <div className="col-50">
-                                        <label htmlFor="country"><i className="fa fa-address-card-o"></i> Country</label>
+                                        <label htmlFor="country"><i className="fa fa-flag"></i> Country</label>
                                         <input data-recurly="country" type="text" id="country" name="country"
                                                placeholder="Country" defaultValue="US"/>
                                     </div>
