@@ -11,7 +11,7 @@ const handleReady = () => console.log('[ready]');
 
 
 function App() {
-    const [fontSize, setFontSize] = useState('18');
+    const [fontSize] = useState('18');
 
     return (
         <div className="DemoSection">
@@ -54,43 +54,45 @@ function CardForm(props) {
                                 <label htmlFor="fname"><i className="fa fa-address-card-o"></i> Address 1</label>
                                 <input data-recurly="address1" type="text" id="fname" name="address1"
                                        placeholder="Address 1" defaultValue="123 The Street"/>
-                                <label htmlFor="fname"><i className="fa fa-address-card-o"></i> Address 2</label>
-                                <input data-recurly="address2" type="text" id="fname" name="address2"
-                                       placeholder="Address 2" defaultValue=""/>
                                 <div className="row">
-                                    <div className="col-25">
+                                    <div className="col-50">
                                         <label htmlFor="city">City</label>
                                         <input data-recurly="city" type="text" id="city" name="city"
                                                placeholder="City" defaultValue="New York"/>
                                     </div>
-                                    <div className="col-25">
+                                    <div className="col-50">
                                         <label htmlFor="state">State</label>
                                         <input data-recurly="state" type="text" id="state" name="state"
                                                placeholder="State" defaultValue="NY"/>
                                     </div>
-                                    <div className="col-25">
+                                </div>
+                                <div className="row">
+                                    <div className="col-50">
                                         <label htmlFor="zip">Zip</label>
                                         <input data-recurly="postal_code" type="text" id="zip" name="zip"
                                                placeholder="Zip" defaultValue="94117"/>
                                     </div>
-                                    <div className="col-25">
+                                    <div className="col-50">
                                         <label htmlFor="country">Country</label>
                                         <input data-recurly="country" type="text" id="country" name="country"
                                                placeholder="Country" defaultValue="US"/>
                                     </div>
                                 </div>
                             </div>
+                            <div className="col-50">
+                                <h3>Payment</h3>
+                                <CardElement
+                                    onBlur={handleBlur}
+                                    onChange={handleChange}
+                                    onFocus={handleFocus}
+                                    onReady={handleReady}
+                                    onSubmit={handleSubmit}
+                                    style={{fontSize}}
+                                />
+                                <p></p>
+                                <input type="submit" value="Pay" className="btn"/>
+                            </div>
                         </div>
-                        <CardElement
-                            onBlur={handleBlur}
-                            onChange={handleChange}
-                            onFocus={handleFocus}
-                            onReady={handleReady}
-                            onSubmit={handleSubmit}
-                            style={{fontSize}}
-                        />
-                        <p></p>
-                        <input type="submit" value="Pay" className="btn"/>
                     </form>
                 </div>
             </div>
