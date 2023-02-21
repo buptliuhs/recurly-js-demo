@@ -32,8 +32,13 @@ function CardForm(props) {
     const handleSubmit = event => {
         if (event.preventDefault) event.preventDefault();
         recurly.token(formRef.current, (err, token) => {
-            if (err) console.log('[error]', err);
-            else console.log('[token]', token);
+            if (err) {
+                console.log('[error]', err);
+                alert(`Failed: ${err.message}`);
+            } else {
+                console.log('[token]', token);
+                alert(`Token ID: ${token.id}`);
+            }
         });
     };
 
