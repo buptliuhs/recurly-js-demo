@@ -81,6 +81,13 @@ function CardForm(props) {
                             </div>
                             <div className="col-50">
                                 <h3>Payment</h3>
+                                <label htmlFor="fname">Accepted Cards</label>
+                                <div className="icon-container">
+                                    <i className="fa-brands fa-cc-visa">&nbsp;</i>
+                                    <i className="fa-brands fa-cc-mastercard">&nbsp;</i>
+                                    <i className="fa-brands fa-cc-amex">&nbsp;</i>
+                                    <i className="fa-brands fa-cc-discover"></i>
+                                </div>
                                 <label htmlFor="card"><i className="fa fa-credit-card"></i> Credit Card</label>
                                 <CardElement
                                     onBlur={handleBlur}
