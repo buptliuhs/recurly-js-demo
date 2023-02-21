@@ -88,10 +88,10 @@ function CardForm(props) {
                                 <h3>Payment</h3>
                                 <label htmlFor="fname">Accepted Cards</label>
                                 <div className="icon-container">
-                                    <i className="fa-brands fa-cc-visa">&nbsp;</i>
-                                    <i className="fa-brands fa-cc-mastercard">&nbsp;</i>
-                                    <i className="fa-brands fa-cc-amex">&nbsp;</i>
-                                    <i className="fa-brands fa-cc-discover"></i>
+                                    <i className="fa-brands fa-cc-visa" style={{color: "navy"}}>&nbsp;</i>
+                                    <i className="fa-brands fa-cc-mastercard" style={{color: "red"}}>&nbsp;</i>
+                                    <i className="fa-brands fa-cc-amex" style={{color: "blue"}}>&nbsp;</i>
+                                    <i className="fa-brands fa-cc-discover" style={{color: "orange"}}></i>
                                 </div>
                                 <label htmlFor="card"><i className="fa fa-credit-card"></i> Credit Card</label>
                                 <CardElement
